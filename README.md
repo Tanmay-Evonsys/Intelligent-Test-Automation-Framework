@@ -7,17 +7,28 @@ An LLM is also integrated to auto-generate `.feature` files from natural languag
 
 
 ## Generating Features With Natural Language
-UNIMPLEMENTED (The following is intended implementation)
+**Single-time setup:**
+
+First create the dotenv file with your secret openai API key. The LLM will not work without this.
+
+The file must be in the main folder. Example path: `/.env`
+
+Make sure the file is in the format:
+
+```
+OPENAI_API_KEY=[your key here]
+```
+
+**Every time you run:**
 
 Run the `generate.py` file. Follow the prompts to input your feature specifications in natural language. Your generated .feature file should be in `hellocucumber/features/` with gherkin syntax.
-
 
 
 ## Generating Tests With Pega Integration
 UNIMPLEMENTED
 
 
-## Cucumber-Playwright Integration
+## Testing with Cucumber-Playwright Integration
 All features and step definitions are inside the `/hellocucumber` folder. 
 
 All tests should be run from this folder.
@@ -74,4 +85,13 @@ Generated reports are inside `/hellocucumber/reports`
 For reference on detailed step results, visit [step results page.](https://cucumber.io/docs/cucumber/api#step-results)
 
 
-
+## Dependencies
+**You must install the following dependencies:**
+Languages/Runtime env:
+- Javascript/Typescript
+- Python
+- Node.js + npm
+Packages/Libraries:
+- Cucumber (@cucumber/cucumber on npm) - [Installation Page](https://cucumber.io/docs/installation/)
+- Playwright (npm) - [Installation Page](https://playwright.dev/docs/intro)
+- openai (python)
