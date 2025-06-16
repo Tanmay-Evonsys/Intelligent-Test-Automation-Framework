@@ -89,9 +89,10 @@ For reference on detailed step results, visit [step results page.](https://cucum
 **You must install the following dependencies:**
 Languages/Runtime env:
 - Javascript/Typescript
-- Python
+- Python3
 - Node.js + npm
 Packages/Libraries:
 - Cucumber (@cucumber/cucumber on npm) - [Installation Page](https://cucumber.io/docs/installation/)
 - Playwright (npm) - [Installation Page](https://playwright.dev/docs/intro)
 - openai (python)
+- python-dotenv (python)
