@@ -1,0 +1,85 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "loan-application;successful-loan-submission.",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful loan submission.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1747389124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am on the \"https://google.com\" page",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3784105832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter \"10000\" into the \"Amount\" field",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:22"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30004024333,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (/Users/tanmay/Documents/Intelligent_Test_Automation_Framework/cucumber_project/hellocucumber/node_modules/@cucumber/cucumber/lib/time.js:64:20)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on \"Submit\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see \"Under Review\" as the application status",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "loan-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Loan Application",
+    "tags": [],
+    "uri": "features/loan_application.feature"
+  }
+]
